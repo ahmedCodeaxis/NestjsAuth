@@ -32,7 +32,7 @@ export class AuthService {
     await this.userModel.create({
       name,
       email,
-      password: hashedPassword,
+      password: hashedPassword,//Password
     });
   }
 
