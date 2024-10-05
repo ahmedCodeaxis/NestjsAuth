@@ -17,7 +17,7 @@ export class AuthService {
   ) {}
 
   async signup(signupData: SignupDto) {
-    const { email, password, name } = signupData;
+    const { email, password, name,role } = signupData;
 
     // Vérifier si l'email est déjà utilisé
     const emailInUse = await this.userModel.findOne({ email });
@@ -33,6 +33,7 @@ export class AuthService {
       name,
       email,
       password: hashedPassword,//Password
+      role: role || 'client',
     });
   }
 
