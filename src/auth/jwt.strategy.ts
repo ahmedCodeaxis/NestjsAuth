@@ -16,7 +16,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
 
   async validate(payload: JwtPayload) {
     // Cette méthode est appelée si le JWT est valide
-    // Vous pouvez ajouter votre logique ici pour vérifier l'utilisateur dans la base de données
-    return { userId: payload.userId }; // Vous pouvez retourner un utilisateur complet si nécessaire
+    // je peux  ajouter votre logique ici pour vérifier l'utilisateur dans la base de données
+    return { userId: payload.userId }; //Je peux retourner un utilisateur complet si nécessaire
   }
 }

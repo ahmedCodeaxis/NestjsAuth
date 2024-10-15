@@ -8,6 +8,7 @@ import { OrderModule } from './order/order.module';
 import { LoggerMiddleware } from './logger/logger.middleware';
 import { UtilModule } from './util/util.module';
 import { AuthModule } from './auth/auth.module';
+import { FavModule } from './fav/fav.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { AuthModule } from './auth/auth.module';
     OrderModule,
     UtilModule,
     AuthModule,
+    FavModule,
    
   ],
 })

@@ -4,8 +4,8 @@ import { Controller, Post, Body, UseGuards, HttpCode, HttpStatus } from '@nestjs
 import { AuthService } from './auth.service';
 import { SignupDto } from './dto/signup.dto';
 import { LoginDto } from './dto/login.dto';
-import { AuthGuard } from '@nestjs/passport'; // Si vous utilisez des gardes
-import { RefreshTokenDto } from './dto/refresh-token.dto'; // Créez ce DTO si nécessaire
+import { AuthGuard } from '@nestjs/passport'; 
+import { RefreshTokenDto } from './dto/refresh-token.dto';
 
 @Controller('auth')
 export class AuthController {

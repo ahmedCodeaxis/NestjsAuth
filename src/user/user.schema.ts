@@ -12,7 +12,7 @@ export class User extends Document {
 
   @Prop()
   password: string;
-  @Prop({ default: 'client' }) // Le rôle par défaut est client
+  @Prop({ default: 'client' }) 
   role: string;
 
   @Prop({ default: Date.now })
